@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira sans', sans-serif;
+  }
+nav {
+    width: 100%; 
+    background-color: #3C3A39;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo{
+    height: 24px;
+    width: 24px;
+}
+.menu{
+    height: 24px;
+    width: 24px;
+}
+.page1-content{
+    Width: Hug (375px);
+    Height: Hug (590px);
+}
