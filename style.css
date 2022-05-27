@@ -4,6 +4,13 @@
     padding: 0;
     font-family: 'Fira sans', sans-serif;
   }
+  body{
+      width: 100%;
+      margin: 0 24px 0 0
+  }
+.blackpage{
+    background-color: #1C1A19;
+}
 nav {
     width: 100%; 
     background-color: #3C3A39;
@@ -11,7 +18,7 @@ nav {
     top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 24px 24px 24px 24px;
 }
 .logo{
     height: 24px;
@@ -22,6 +29,64 @@ nav {
     width: 24px;
 }
 .page1-content{
-    Width: Hug (375px);
-    Height: Hug (590px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 700px;
+    margin: 0;
 }
+.my-name {
+  color: #ff6b00;
+  font-size: 56px;
+  font-family: "Crete Round";
+  margin: 140px 0 12px 24;
+  line-height: 64px;
+  line-height: 114%;
+  text-align: left;
+  letter-spacing: 0.37px;
+  width: 70%;
+  height: 124px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+.my-position{
+    width: 90%;
+    font-family: Roboto;
+    font-style: Bold;
+    font-size: 24px;
+    text-align: Left;
+    color: #FFF5E1; 
+    display: flex;
+    align-items: flex-end;
+    margin: 10 24 10 24;
+}
+.discription-me{
+    width:100%px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 10 24 10 24;
+    display: flex;
+}
+.social-media{
+    display: flex;
+    justify-items: flex-start;
+    justify-items: space-around;
+    padding: 30; 
+}
+ .b-img{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; 
+  position: absolute;
+  width: 406.89px;
+  height: 312.03px;
+  left: 620.1px;
+  top: 317px;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+ }
