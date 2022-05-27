@@ -93,12 +93,12 @@ nav {
   margin: 10px;
 }
 
-.icon-list {
-  list-style-type: none;   
-}
-
 .img-list {
   display: inline;
+}
+
+.icon-list {
+  list-style-type: none;
 }
 
 .b-img-1 {
