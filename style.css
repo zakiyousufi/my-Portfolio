@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Fira sans', sans-serif;
   }
   body{
       width: 100%;
@@ -19,6 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 24px 24px 24px 24px;
+    z-index: 2;
 }
 .logo{
     height: 24px;
@@ -33,23 +33,24 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 700px;
-    margin: 0;
+    height:fit-content;
+    padding: 24px 0 24px 24px;
 }
 .my-name {
   color: #ff6b00;
   font-size: 56px;
   font-family: "Crete Round";
-  margin: 140px 0 12px 24;
-  line-height: 64px;
-  line-height: 114%;
+  margin: 140px 0 12px 0;
+  /* line-height: 64px;
+  line-height: 114%; */
   text-align: left;
   letter-spacing: 0.37px;
-  width: 70%;
+  width: 100%;
   height: 124px;
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
 }
 .my-position{
@@ -61,7 +62,7 @@ nav {
     color: #FFF5E1; 
     display: flex;
     align-items: flex-end;
-    margin: 10 24 10 24;
+    margin: 10px 0 10px 0;
 }
 .discription-me{
     width:100%px;
@@ -70,23 +71,31 @@ nav {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 10 24 10 24;
+    margin: 10px 24px 10px 0;
     display: flex;
 }
+
 .social-media{
     display: flex;
-    justify-items: flex-start;
-    justify-items: space-around;
-    padding: 30; 
+    justify-content: space-between;
+    padding-top: 20px;
 }
- .b-img{
+
+.icons {
+    width: 18px;
+    height: 20px;
+    margin: 3px;
+}
+
+.b-img-1{
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end; 
-  position: absolute;
-  width: 406.89px;
+  width: 113px;
   height: 312.03px;
-  left: 620.1px;
-  top: 317px;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+ }
+
+ .page-footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
  }
