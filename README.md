@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## My Portfolio
-This is a simple html page which is contains a Hello Microverse header.
+This is an HTML psge wich content Ahmad Zaki Yousufi's portfolio.
 
 ## Built With
 HTML
