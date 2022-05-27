@@ -2,16 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  body{
-      width: 100%;
-      margin: 0 24px 0 0
-  }
-.blackpage{
+}
+
+body {
+    width: 100%;
+    margin: 0 24px 0 0
+}
+
+.blackpage {
     background-color: #1C1A19;
 }
+
 nav {
-    width: 100%; 
+    width: 100%;
     background-color: #3C3A39;
     position: fixed;
     top: 0;
@@ -20,52 +23,55 @@ nav {
     padding: 24px 24px 24px 24px;
     z-index: 2;
 }
-.logo{
+
+.logo {
     height: 24px;
     width: 24px;
 }
-.menu{
+
+.menu {
     height: 24px;
     width: 24px;
 }
-.page1-content{
+
+.page1-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height:fit-content;
+    height: fit-content;
     padding: 24px 0 24px 24px;
 }
-.my-name {
-  color: #ff6b00;
-  font-size: 56px;
-  font-family: "Crete Round";
-  margin: 140px 0 12px 0;
-  /* line-height: 64px;
-  line-height: 114%; */
-  text-align: left;
-  letter-spacing: 0.37px;
-  width: 100%;
-  height: 124px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
 
+.my-name {
+    color: #ff6b00;
+    font-size: 56px;
+    font-family: "Crete Round";
+    margin: 140px 0 12px 0;
+    text-align: left;
+    letter-spacing: 0.37px;
+    width: 100%;
+    height: 124px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
-.my-position{
+
+.my-position {
     width: 90%;
     font-family: Roboto;
     font-style: Bold;
     font-size: 24px;
     text-align: Left;
-    color: #FFF5E1; 
+    color: #FFF5E1;
     display: flex;
     align-items: flex-end;
     margin: 10px 0 10px 0;
 }
-.discription-me{
-    width:100%px;
+
+.discription-me {
+    width: 100%px;
     font-family: 'Poppins';
     font-style: normal;
     font-size: 16px;
@@ -75,7 +81,7 @@ nav {
     display: flex;
 }
 
-.social-media{
+.social-media {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -87,15 +93,15 @@ nav {
     margin: 3px;
 }
 
-.b-img-1{
-  display: flex;
-  width: 113px;
-  height: 312.03px;
- }
+.b-img-1 {
+    display: flex;
+    width: 113px;
+    height: 312.03px;
+}
 
- .page-footer {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     width: 100%;
- }
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
