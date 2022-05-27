@@ -77,7 +77,7 @@ nav {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin: 10px 24px 10px 0;
+  margin: 10px 30px 10px 0;
   display: flex;
 }
 
@@ -116,4 +116,90 @@ nav {
 
 .icons:hover {
   border: 1px solid #ff6b00;
+}
+
+.my-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 120px 24 24px 24px;
+}
+
+.projects{
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-size: 40px;
+  display: flex;
+  align-self: center;
+  margin-top: 120px;
+}
+
+.line{
+  margin-top: 30px;
+  display: flex;
+  align-self: center;
+}
+
+.project-img {
+  display: flex;
+  align-self: center;
+  margin-top: 18px;
+}
+
+.heading2 {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.project-discription {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px
+}
+
+.web-icons {
+  list-style-type: none;
+  display: flex;
+  justify-items: space-between;
+  flex-direction: row;
+  padding: 12px;
+}
+
+.icon-web {
+  margin: 12px;
+}
+
+.button1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  margin: 24px;
+  border: 0px;
+}
+
+.button1-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 4px;
 }
