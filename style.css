@@ -7,6 +7,7 @@
 body {
   width: 100%;
   margin: 0 24px 0 0;
+
 }
 
 .blackpage {
@@ -104,4 +105,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+.icons:hover {
+  border: 1px solid #ff6b00;
 }
