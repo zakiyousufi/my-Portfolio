@@ -93,6 +93,14 @@ nav {
   margin: 10px;
 }
 
+.icon-list {
+  list-style-type:none;   display: inline;
+}
+
+.img-list {
+  display: inline;
+}
+
 .b-img-1 {
   display: flex;
   width: 150px;
