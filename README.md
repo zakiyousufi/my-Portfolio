@@ -16,9 +16,8 @@ Usage
 Clone the repositry and open the index.html which is in the folder.
 
 ## Authors
-GitHub: @zakiyousufi
-Twitter: @ahmadzakiyousofi
-LinkedIn: ahmadzakiyousufi
+GitHub: [Ahmad Zaki Yousufi](https://github.com/zakiyousufi)
+LinkedIn: [Ahmad Zaki Yousufi](https://www.linkedin.com/in/ahmadzaki-yousufi-055214217/)
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
