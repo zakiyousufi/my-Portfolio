@@ -71,13 +71,13 @@ nav {
 }
 
 .discription-me {
-  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 16px;
   color: #fff;
-  margin: 10px 0 10px 0;
-  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 24px;
   display: flex;
 }
 
@@ -280,7 +280,7 @@ nav {
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  padding: 24px 0 24px 0;
+  padding: 24px 0 24px 24px;
 }
 
 .language {
@@ -398,7 +398,7 @@ nav {
   margin-top: 70px;
 }
 
-.page-footer {
+.last-page-footer {
   margin-top: 34px;
   display: flex;
   justify-content: center;
