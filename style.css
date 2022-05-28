@@ -284,7 +284,7 @@ nav {
 
 .language {
   display: flex;
-  align-self: center;
+  align-items: center;
   flex-direction: row;
   margin-top: 137px;
 }
@@ -293,8 +293,8 @@ nav {
   font-family: 'Inter', serif;
   font-style: normal;
   font-size: 32px;
-  display: grid;
-  grid-column-start: 5;
+  display: flex;
+  align-items: center;
   color: #fff;
   text-align: center;
 }
@@ -313,6 +313,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .language-list {
@@ -322,19 +323,22 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .language-list-content {
-  /* margin: 30px 30px 0  0; */
+  margin-top: 30px;
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 22px;
+}
+.skills{
+  padding-left: 20px;
 }
 
 .lastpage {
-  background-color: #e5e5e5;
+  background-color: #f7f7f7;
   padding: 120px 12px 10px 12px;
 }
 
@@ -347,48 +351,39 @@ nav {
 }
 
 .form {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 19px 0 24px 24px;
+  padding: 19px 5px 24px 5px;
 }
 
 .fullname {
   display: flex;
   align-items: center;
-  width: 80%;
-  background-color: #e5e5e5;
+  width: 100%;
+  background-color: #f7f7f7;
   color: #979493;
-  border: 0;
-  border-bottom: 1px solid;
+  border: none;
+  border-bottom: 1px solid black;
   padding-left: 20px;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   margin-top: 54px;
 }
 
-.textarea {
-  padding: 12px;
-  width: 80%;
-}
-
-.textarea-1 {
+.text-area {
   height: 90px;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  background-color: #e5e5e5;
-  color: #979493;
-  border: 0;
-  border-bottom: 1px solid;
-  padding-left: 20px;
+  width: 100%;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
   margin-top: 54px;
+  background-color: #fbf8f7;
+  padding-left: 20px;
 }
 
 .button-end {
@@ -399,8 +394,7 @@ nav {
 .project-footer {
   margin-top: 30px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
   padding: 24px;
   width: 100%;
 }
