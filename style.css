@@ -273,6 +273,7 @@ nav {
   display: flex;
   align-self: flex-end;
 }
+
 .page6-content {
   width: 100%;
   display: flex;
@@ -333,7 +334,8 @@ nav {
   font-style: normal;
   font-size: 22px;
 }
-.skills{
+
+.skills {
   padding-left: 20px;
 }
 
