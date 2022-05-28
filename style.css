@@ -75,9 +75,9 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 24px;
   color: #fff;
-  margin: 10px 30px 10px 0;
+  margin: 10px 0 10px 0;
+  margin-right: 30px;
   display: flex;
 }
 
@@ -210,7 +210,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 50px;
   background-image: url(css/image/projects_imges/Placeholder1.png);
   background-color: #cccccc;
   padding: 24px 0 24px 0px;
@@ -250,4 +250,40 @@ nav {
   background: #ff6b00;
   margin: 0px;
   border: 0px;
+}
+
+.page4 {
+  margin-top: 30px;
+}
+
+.button-resume {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  padding: 12px;
+  width: 161px;
+  height: 48px;
+  background: #ff6b00;
+  margin: 12px;
+  border: 0px;
+}
+
+.b-img-2 {
+  display: flex;
+  align-self: flex-end;
+}
+
+.language {
+  display: flex;
+  align-items: inline;
+  justify-items: space-evenly;
+}
+
+.lang-h2 {
+  font-family: 'InaiMathi';
+  font-style: normal;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
