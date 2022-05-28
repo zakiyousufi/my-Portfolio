@@ -275,15 +275,42 @@ nav {
 
 .language {
   display: flex;
-  align-items: inline;
-  justify-items: space-evenly;
+  align-self: center;
+  flex-direction: row;
+  margin-top: 137px;
 }
 
 .lang-h2 {
-  font-family: 'InaiMathi';
+  font-family: 'Inter', serif;
   font-style: normal;
   font-size: 32px;
+  display: grid;
+  grid-column-start: 5;
+  color: #fff;
+  text-align: center;
+}
+
+.orange-vector {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin: 0 10px 0px 24px;
+}
+
+.language-names {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
   display: flex;
   align-items: center;
-  color: #fff;
+}
+
+.language-list {
+  list-style-type: none;
+  margin-top: 13px;
+  margin: 32;
 }
