@@ -429,7 +429,7 @@ nav {
   .menu-desktop-container {
     display: flex;
     flex-direction: row;
-    margin-right: 80px;
+    margin-right: 100px;
   }
 
   .menu-desktop {
@@ -442,7 +442,7 @@ nav {
   }
 
   .logo {
-    margin-left: 80px;
+    margin-left: 100px;
   }
 
   .page1-content {
@@ -486,7 +486,7 @@ nav {
     grid-column-start: 2;
     grid-column-end: 3;
     position: absolute;
-    bottom: 20%;
+    bottom: 12%;
     right: 0;
     width: 50%;
     height: auto;
