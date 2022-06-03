@@ -563,12 +563,12 @@ nav {
   }
 
   .multy-task {
-    grid-column: 2;
+    grid-column-start: 2;
     margin-bottom: 10px;
   }
 
   .project-discription {
-    grid-column: 2;
+    grid-column-start: 2;
     margin-top: 0;
   }
 
@@ -686,6 +686,31 @@ nav {
     align-items: flex-start;
   }
 
+  .lastpage {
+    padding: 30px;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lastpage-heading {
+    margin: 50px 30px 0 30px;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;  
+  }
+
+  .form {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
 }
 
 @media (min-width: 1100px) {
@@ -717,6 +742,6 @@ nav {
     width: 80%;
     padding: 30px;
     margin-right: 20px;
-  }  
-
+  }
+  
 }
