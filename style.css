@@ -698,14 +698,13 @@ nav {
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;  
+    line-height: 52px;
   }
 
   .form {
     margin-right: 30px;
     margin-left: 30px;
   }
-
 }
 
 @media (min-width: 1100px) {
