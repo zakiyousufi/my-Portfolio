@@ -136,12 +136,16 @@ nav {
   padding: 120px 24 24px 24px;
 }
 
+.projects-subject {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
 .projects {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-size: 40px;
-  display: flex;
-  align-self: center;
   margin-top: 120px;
 }
 
@@ -149,12 +153,19 @@ nav {
   margin-top: 30px;
   display: flex;
   align-self: center;
+  width: 80%;
 }
 
 .project-img {
   display: flex;
   align-self: center;
   margin-top: 18px;
+}
+
+.project-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .heading2 {
@@ -211,6 +222,12 @@ nav {
   text-align: center;
   color: #fff;
   margin-left: 24px;
+}
+
+.prokects-section2 {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
 }
 
 .page2 {
@@ -505,10 +522,104 @@ nav {
     width: 5%;
   }
 
+  .projects-subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+  }
+
+  .projects {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .line {
+    width: 40%;
+    margin-left: 5px;
+  }
+
+  .project-1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .project-img {
+    width: 45%;
+    height: auto;
+  }
+
+  .multy-task {
+    grid-column: 2;
+    margin-bottom: 10px;
+  }
+
+  .project-discription {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .icons-desktop{
+    grid-column: 2;
+  }
+
+  .project-desktop-button {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .project-img {
+    grid-column-start: 1;
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .prokects-section2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    padding: 10px;
+    margin-right: 5px;
+  }
+
+  .page2 {
+    margin-right: 10px;
+  }
+
 }
 
 @media (min-width: 1100px) {
   .my-name {
     font-size: 72px;
   }
+
+  .desktop-b-img-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .projects-subject {
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    width: 65%;
+    margin-left: 5px;
+  }
+
+  .prokects-section2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    width: 80%;
+    padding: 30px;
+    margin-right: 20px;
+  }  
+
 }
