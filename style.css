@@ -30,7 +30,7 @@ nav {
 }
 
 .menu {
-  display:flex;
+  display: flex;
   height: 24px;
   width: 24px;
 }
@@ -482,12 +482,12 @@ nav {
     width: 100%;
     padding-top: 3%;
   }
-  
+
   .header-text {
     grid-column-start: 2;
     margin-left: 4%;
   }
-  
+
   .my-name {
     display: flex;
     align-self: center;
@@ -520,7 +520,7 @@ nav {
     width: 50%;
     height: auto;
   }
-  
+
   .b-img-1 {
     display: none;
   }
@@ -530,7 +530,6 @@ nav {
     left: 24px;
     display: flex;
     align-self: center;
-    display: flex;
     width: 5%;
   }
 
@@ -557,11 +556,6 @@ nav {
     grid-template-columns: 60% 40%;
   }
 
-  .project-img {
-    width: 45%;
-    height: auto;
-  }
-
   .multy-task {
     grid-column-start: 2;
     margin-bottom: 10px;
@@ -572,7 +566,7 @@ nav {
     margin-top: 0;
   }
 
-  .icons-desktop{
+  .icons-desktop {
     grid-column: 2;
   }
 
@@ -599,6 +593,7 @@ nav {
 
   .page2 {
     margin-right: 10px;
+    gap: 10px;
   }
 
   .page6-content {
@@ -632,13 +627,13 @@ nav {
     padding: 12px;
     width: 161px;
     height: 48px;
-    background: #F55800;
+    background: #f55800;
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 17px;
   }
-  
-  .desktop-b-img-2{
+
+  .desktop-b-img-2 {
     display: grid;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -657,7 +652,7 @@ nav {
     margin-top: 0;
   }
 
-  .desktop-language{
+  .desktop-language {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     margin-top: 0;
@@ -671,7 +666,7 @@ nav {
   .Frameworks {
     grid-column-start: 2;
   }
-  
+
   .skill {
     grid-column-start: 3;
   }
@@ -699,7 +694,7 @@ nav {
 
   .lastpage-heading {
     margin: 50px 30px 0 30px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
@@ -725,6 +720,7 @@ nav {
     bottom: 0;
     right: 0;
   }
+
   .projects-subject {
     display: flex;
     justify-content: center;
