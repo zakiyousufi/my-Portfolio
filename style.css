@@ -614,6 +614,10 @@ nav {
     grid-template-columns: 60% 40%;
   }
 
+  .project-head {
+    grid-column-start: 2;
+  }
+
   .multy-task {
     grid-column-start: 2;
     margin-bottom: 10px;
@@ -635,9 +639,9 @@ nav {
 
   .project-img {
     grid-column-start: 1;
-    width: 50%;
+    width: 60%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 
   .projects-section2 {
@@ -683,7 +687,7 @@ nav {
 
   .page6-content {
     display: grid;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 40% 10% 50%;
     padding-left: 10%;
   }
 
@@ -731,17 +735,23 @@ nav {
     right: 0;
   }
 
+  .about-me-footer{
+    display: none;
+  }
+
   .line-language {
     display: none;
   }
 
   .desktop-language-line {
+    grid-row-start: 2;
     display: grid;
     width: 90%;
     margin-top: 0;
   }
 
   .desktop-language {
+    grid-row-start: 3;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     margin-top: 0;
@@ -750,14 +760,17 @@ nav {
 
   .language-desktop2 {
     grid-column-start: 1;
+    margin-left: 40%;
   }
 
   .Frameworks {
     grid-column-start: 2;
+    margin-left: 40%;
   }
 
   .skill {
     grid-column-start: 3;
+    margin-left: 40%;
   }
 
   .language {
