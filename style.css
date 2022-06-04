@@ -507,13 +507,12 @@ nav {
 
   /* Add animation below */
   .animate-btn {
-    .btn {
       -webkit-animation-duration: 0.8s;
       animation-duration: 0.8s;
       transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
     }
 
-    .btn:hover {
+    .animate-btn:hover {
       -webkit-animation-name: btn-hover;
       animation-name: btn-hover;
       -webkit-animation-fill-mode: forwards;
@@ -522,19 +521,19 @@ nav {
       animation-delay: 0s;
     }
 
-    .btn:focus {
+    .animate-btn:focus {
       background: #2230d2;
       color: #fff;
     }
 
-    @-webkit-keyframes btn-hover {
+    @-webkit-keyframes animate-btn-hover {
       100% {
         box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
         color: #fff;
       }
     }
 
-    @keyframes btn-hover {
+    @keyframes animate-btn-hover {
       100% {
         box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
         color: #fff;
