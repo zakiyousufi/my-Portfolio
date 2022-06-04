@@ -507,58 +507,61 @@ nav {
 
   /* Add animation below */
   .animate-btn {
-      -webkit-animation-duration: 0.8s;
-      animation-duration: 0.8s;
-      transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
-    }
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+  }
 
-    .animate-btn:hover {
-      -webkit-animation-name: btn-hover;
-      animation-name: btn-hover;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      -webkit-animation-delay: 0s;
-      animation-delay: 0s;
-    }
+  .animate-btn:hover {
+    -webkit-animation-name: btn-hover;
+    animation-name: btn-hover;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
 
-    .animate-btn:focus {
-      background: #2230d2;
+  .animate-btn:focus {
+    background: #E05304;
+    color: #F4F1F0;
+  }
+
+  .animate-btn:hover {
+    background: #FFF5E1;
+    border: 1px solid #F55800;
+    color: #F55800;
+  }
+
+  @-webkit-keyframes animate-btn-hover {
+    100% {
+      box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
       color: #fff;
-    }
-
-    @-webkit-keyframes animate-btn-hover {
-      100% {
-        box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
-        color: #fff;
-      }
-    }
-
-    @keyframes animate-btn-hover {
-      100% {
-        box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
-        color: #fff;
-      }
-    }
-
-    .animate-logo {
-      color: #6070ff;
-      animation-name: rotate-logo;
-      animation-duration: 1.5s;
-      animation-iteration-count: 4;
-    }
-
-    @keyframes rotate-logo {
-      50% {
-        transform: scale(1.5) rotate(360deg) translateX(-50%);
-      }
-
-      to {
-        transform: scale(1) rotate(720deg) translateX(0);
-      }
     }
   }
 
-  /* Add animation above */
+  @keyframes animate-btn-hover {
+    100% {
+      box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
+      color: #fff;
+    }
+  }
+
+  .animate-logo {
+    color: #6070ff;
+    animation-name: rotate-logo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 4;
+  }
+
+  @keyframes rotate-logo {
+    50% {
+      transform: scale(1.5) rotate(360deg) translateX(-50%);
+    }
+
+    to {
+      transform: scale(1) rotate(720deg) translateX(0);
+    }
+  }
 
   .img-list {
     display: flex;
@@ -637,7 +640,7 @@ nav {
     margin-left: 10%;
   }
 
-  .prokects-section2 {
+  .projects-section2 {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
@@ -648,8 +651,35 @@ nav {
 
   .page2 {
     margin-right: 10px;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .button4 {
+    display:none
+  }
+
+  .page2:hover .heading4 {
+    display: none;
+  }
+
+  .page2:hover .project-discription2 {
+    display: none;
+  }
+
+  .page2:hover .web-icons4 {
+    display: none;
+  }
+
+  .page2:hover .button4 {
+    display: flex;
+    top: 80%;
+  }
+
+  .page2:hover{
+    background-image: url(css/image/projects_imges/hover.png);
+    padding-top: 340px;
+  } 
 
   .page6-content {
     display: grid;
@@ -687,12 +717,16 @@ nav {
     font-family: 'Inter', sans-serif;
     font-size: 17px;
   }
-
-  .desktop-b-img-2 {
-    display: grid;
+  .d-about-b {
     grid-column-start: 2;
-    grid-row-start: 1;
-    width: 50%;
+    margin-left: 0;
+    margin-top: -40%;
+  }
+  .desktop-b-img-2 {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+    width: 100%;
     height: auto;
     right: 0;
   }
@@ -760,6 +794,15 @@ nav {
     margin-right: 30px;
     margin-left: 30px;
   }
+
+  .fullname {
+    padding: 20px;
+  }
+
+  .button-end {
+    margin-left: -80%;
+  }
+
 }
 
 @media (min-width: 1100px) {
@@ -791,6 +834,20 @@ nav {
     grid-template-rows: 50% 50%;
     width: 80%;
     padding: 30px;
+    padding-left: 2%;
     margin-right: 20px;
+    margin-left: 10%;
   }
+  .page2 {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .d-about-b {
+    grid-column-start: 2;
+    margin-left: 0;
+    margin-top: -50%;
+  }
+
 }
