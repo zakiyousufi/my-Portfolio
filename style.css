@@ -808,7 +808,6 @@ nav {
   .button-end {
     margin-left: -80%;
   }
-
 }
 
 @media (min-width: 1100px) {
@@ -856,5 +855,4 @@ nav {
     margin-left: 0;
     margin-top: -50%;
   }
-
 }
