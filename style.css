@@ -505,59 +505,61 @@ nav {
     margin-bottom: 30px;
   }
 
-  /* Add animation below*/
+  /* Add animation below */
   .animate-btn {
     .btn {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
-}
+      -webkit-animation-duration: 0.8s;
+      animation-duration: 0.8s;
+      transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+    }
 
-.btn:hover {
-  -webkit-animation-name: btn-hover;
-  animation-name: btn-hover;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
+    .btn:hover {
+      -webkit-animation-name: btn-hover;
+      animation-name: btn-hover;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
 
-.btn:focus {
-  background: #2230d2;
-  color: #fff;
-}
+    .btn:focus {
+      background: #2230d2;
+      color: #fff;
+    }
 
-@-webkit-keyframes btn-hover {
-  100% {
-    box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
-    color: #fff;
+    @-webkit-keyframes btn-hover {
+      100% {
+        box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
+        color: #fff;
+      }
+    }
+
+    @keyframes btn-hover {
+      100% {
+        box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
+        color: #fff;
+      }
+    }
+
+    .animate-logo {
+      color: #6070ff;
+      animation-name: rotate-logo;
+      animation-duration: 1.5s;
+      animation-iteration-count: 4;
+    }
+
+    @keyframes rotate-logo {
+      50% {
+        transform: scale(1.5) rotate(360deg) translateX(-50%);
+      }
+
+      to {
+        transform: scale(1) rotate(720deg) translateX(0);
+      }
+    }
   }
-}
 
-@keyframes btn-hover {
-  100% {
-    box-shadow: inset 11rem 0 0 0 #6070ff, 0 8px 16px rgba(64, 83, 252, 0.24);
-    color: #fff;
-  }
-}
-
-  .animate-logo {
-    color: #6070ff;
-    animation-name: rotate-logo;
-    animation-duration: 1.5s;
-    animation-iteration-count: 4;  
-  }
-
-  @keyframes rotate-logo {
-  50% {
-    transform: scale(1.5) rotate(360deg) translateX(-50%);
-  }
-
-  to {
-    transform: scale(1) rotate(720deg) translateX(0);
-  }
-}
-  /* Add animation above*/  
+  /* Add animation above */
 
   .img-list {
     display: flex;
@@ -792,5 +794,4 @@ nav {
     padding: 30px;
     margin-right: 20px;
   }
-
 }
