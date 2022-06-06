@@ -9,9 +9,9 @@ You can use this link [Ahmad Zaki Yousufi's Portfolio](https://zakiyousufi.githu
 
 ## 🏛Built With
 
-< / >HTML
+HTML < / >
 
-{ }CSS
+CSS {    }
 
 ## 📎To get a local copy up and running follow these simple example steps.
 
