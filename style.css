@@ -35,6 +35,12 @@ nav {
   width: 24px;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+
+
 .menu-desktop-container {
   display: none;
 }
