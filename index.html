@@ -22,19 +22,19 @@
     <header class="header">
         <nav class="statusbar">
             <img class="logo animate-logo" alt="My logo picture" src="css/image/logo/5309769.png">
-            <img class="menu" alt="Menu bar" src="css/image/Bars/Menu.svg">
-            <div class="mobile-menu">
-                <img class="close" alt="Close" src="css/image/Bars/close.png">
+            <img id="hamburger" class="menu" alt="Menu bar" src="css/image/Bars/Menu.svg">
+            <div class="mobileMenu">
+                <img class="close menu" alt="Close" src="css/image/Bars/close.png">
                 <h1 class="m-menu-text">
-                    <a class="m-menu-text" href="#" rel="noopener">Portoflio</a>
+                    <a class="m-menu-text" href="#Portfolio" rel="noopener">Portoflio</a>
                     <hr class="m-menu-hr">
-                    <a class="m-menu-text" href="#" rel="noopener">About</a>
+                    <a class="m-menu-text" href="#about" rel="noopener">About</a>
                     <hr class="m-menu-hr">
-                    <a class="m-menu-text" href="#" rel="noopener">Contact</a>
+                    <a class="m-menu-text" href="#contact" rel="noopener">Contact</a>
                     <hr class="m-menu-hr">
                 </h1>
             </div>
-            <div class="menu-desktop-container">
+            <div id="Portfolio" class="menu-desktop-container">
                 <a class="menu-desktop" href="#" rel="noopener">Portoflio</a>
                 <a class="menu-desktop" href="#" rel="noopener">About</a>
                 <a class="menu-desktop" href="#" rel="noopener">Contact</a>
@@ -243,7 +243,7 @@
             </div>
         </div>
     </section>
-    <section class="page6-content blackpage page4">
+    <section id="about" class="page6-content blackpage page4">
         <div class="language-container">
             <div class="desktop-language-texts">
                 <h1 class="my-name about-me">About me</h1>
@@ -343,7 +343,7 @@
             </div>
         </div>
     </section>
-    <section class="lastpage">
+    <section id="contact" class="lastpage">
         <div class="contact-form">
             <h2 class="lastpage-heading">I'm always interested in hearing about new projects, so if you'd like to chat
                 please get in touch.</h2>
@@ -383,6 +383,7 @@
             </li>
         </ul>
     </section>
+    <script src="index.js"></script>
 
 </body>
 

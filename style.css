@@ -13,7 +13,7 @@ body {
   background-color: #1c1a19;
 }
 
-nav {
+.statusbar {
   width: 100%;
   background-color: #3c3a39;
   position: fixed;
@@ -35,7 +35,7 @@ nav {
   width: 24px;
 }
 
-.mobile-menu {
+.mobileMenu {
   display: none;
   background-color: #3c3a39;
   width: 100%;
@@ -61,8 +61,8 @@ nav {
   margin-right: 15%;
 }
 
-.mobile-menu.active {
-  display: none;
+.mobileMenu.active {
+  display: block;
 }
 
 .menu-desktop-container {
