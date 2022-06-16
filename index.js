@@ -7,9 +7,8 @@ hamburger.addEventListener('click', () => {
   mobMenu.classList.toggle('active');
 });
 classOff.addEventListener('click', () => {
-  mobMenu.classList.remove('active')
+  mobMenu.classList.remove('active');
 });
 links.addEventListener('click', () => {
-  mobMenu.classList.remove('active')
+  mobMenu.classList.remove('active');
 });
-
