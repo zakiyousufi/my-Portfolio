@@ -1,16 +1,17 @@
 {
-  "name": "my-Portfolio",
+  "name": "c",
   "version": "1.0.0",
   "description": "This is a html page which is contains all information about me My personal information, contact information, and a screenshot of my project. I have used HTML and CSS for this project and you can use it in your local machin just by cloning this repo.",
   "main": "index.js",
   "dependencies": {
-    "hint": "^6.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hint": "^6.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
