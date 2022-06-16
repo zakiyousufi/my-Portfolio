@@ -11,3 +11,4 @@ classOff.addEventListener('click', () => {
 document.querySelectorAll('.m-menu-text').forEach(n => n.addEventListener('click', () => {
   mobMenu.classList.remove('active');
 }));
+
