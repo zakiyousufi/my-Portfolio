@@ -35,12 +35,8 @@ body {
   width: 24px;
 }
 
-.disable{
-  display: none;
-}
-
 .mobileMenu {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
