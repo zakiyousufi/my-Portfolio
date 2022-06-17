@@ -1,3 +1,5 @@
+const { addEmptyLineBefore } = require("stylelint-scss/dist/utils");
+
 const arr = [
   {
     name: 'Profesional Art Printing Data',
@@ -74,10 +76,10 @@ const seeProject = document.querySelectorAll('.btn-active');
 const popup = document.querySelector('.popup');
 const popupClose = document.querySelector('.popup-close');
 
-seeProject.forEach(addEventListener('click', () => {
+seeProject.forEach((addEmptyLineBefore).addEventListener('click', () => {
   popup.classList.toggle('active');
 }));
 
-  popupClose.addEventListener('click', () => {
+popupClose.addEventListener('click', () => {
   popup.classList.remove('active');
 });
