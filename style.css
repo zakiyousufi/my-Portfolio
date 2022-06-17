@@ -264,6 +264,17 @@ body {
   margin-left: 24px;
 }
 
+.popup {
+  width: 90%;
+  height: 720px;
+}
+
+.popup-h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #172b4d;
+}
+
 .prokects-section2 {
   display: flex;
   align-self: center;
