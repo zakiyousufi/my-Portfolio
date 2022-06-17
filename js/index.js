@@ -1,27 +1,27 @@
-let arr = [
+const arr = [
   {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   },
   {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   },
   {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized r haspersonalized r has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized r haspersonalized r has been the industrys standard',
   },
   {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   },
   {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
   },
   {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized r haspersonalized r has been the industrys standard'
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.A daily selection of privately personalized r haspersonalized r has been the industrys standard',
   },
 ];
 
@@ -30,9 +30,7 @@ function displayProjects() {
   const cards = document.createElement('div');
   cards.classList.add('projects-section2');
   arr.forEach((project) => {
-    const projectHTML =
-      `
-        <div class="page2"><h2 class="heading2 heading4 text-color h2-margin">${project.name}</h2>
+    const projectHTML = `<div class="page2"><h2 class="heading2 heading4 text-color h2-margin">${project.name}</h2>
         <p class="project-discription project-discription2 text-color">${project.description}</p>
         <ul class="web-icons web-icons4">
           <li>
