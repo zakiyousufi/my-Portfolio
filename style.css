@@ -13,7 +13,7 @@ body {
   background-color: #1c1a19;
 }
 
-nav {
+.statusbar {
   width: 100%;
   background-color: #3c3a39;
   position: fixed;
@@ -35,6 +35,47 @@ nav {
   width: 24px;
 }
 
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #2b2a2a;
+  width: 100%;
+  height: 1000px;
+  padding: 24px;
+}
+
+.close {
+  margin-left: 95%;
+  width: 12px;
+  height: 12px;
+}
+
+.m-menu-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #fff5e1;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.mob_menu_list {
+  list-style: none;
+}
+
+.m-menu-hr {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  margin-right: 3%;
+  color: #6f6c6b;
+  border: 1px solid;
+}
+
+.mobileMenu.active {
+  display: block;
+}
+
 .menu-desktop-container {
   display: none;
 }
@@ -44,7 +85,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: fit-content;
+  height: auto;
   padding: 24px 0 24px 24px;
 }
 
@@ -66,7 +107,6 @@ nav {
 .my-position {
   width: 90%;
   font-family: 'Roboto', sans-serif;
-  font-style: bold;
   font-size: 24px;
   text-align: left;
   color: #fff5e1;
@@ -132,8 +172,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: fit-content;
-  padding: 120px 24 24px 24px;
+  height: auto;
+  padding: 120px 24px 24px 24px;
 }
 
 .projects-subject {
@@ -190,13 +230,13 @@ nav {
 .web-icons {
   list-style-type: none;
   display: flex;
-  justify-items: space-between;
   flex-direction: row;
   padding: 12px;
 }
 
 .icon-web {
   margin: 12px;
+  margin-right: 5px;
 }
 
 .button1 {
@@ -230,12 +270,15 @@ nav {
   flex-direction: column;
 }
 
-.page2 {
-  height: 386px;
-  width: 327px;
+.projects-section2 {
   display: flex;
   flex-direction: column;
   align-self: center;
+}
+
+.page2 {
+  height: 386px;
+  width: 327px;
   margin-top: 50px;
   background-image: url(css/image/projects_imges/Placeholder1.png);
   background-color: #ccc;
@@ -313,7 +356,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
+  height: auto;
   padding: 24px 0 24px 24px;
 }
 
@@ -477,7 +520,7 @@ nav {
   .page1-content {
     display: grid;
     grid-template-columns: 5% 45% 50%;
-    height: fit-content;
+    height: auto;
     padding-bottom: 20%;
     width: 100%;
     padding-top: 3%;
@@ -496,7 +539,7 @@ nav {
   }
 
   .my-position {
-    font-size: 32;
+    font-size: 32px;
     margin-bottom: 30px;
   }
 
@@ -790,7 +833,6 @@ nav {
   .lastpage-heading {
     margin: 50px 30px 0 30px;
     font-family: 'Inter', sans-serif;
-    font-style: bold;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
