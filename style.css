@@ -793,6 +793,11 @@ body {
     display: flex;
   }
 
+  .popup-close:hover{
+    width: 17px;
+    height: 17px;
+  }
+
   .popup-icons {
     grid-row: 2;
     margin-top: 24px;
