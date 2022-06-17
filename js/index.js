@@ -15,3 +15,15 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const seeProject = document.querySelector('.btn-active');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup-close')
+
+window.addEventListener('DOMContentLoaded', () => {
+  seeProject.addEventListener('click', () => {
+    popup.classList.toggle('active');
+  });
+  popupClose.addEventListener('click', () => {
+    popup.classList.remove('active');
+  });
+});

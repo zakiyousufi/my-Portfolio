@@ -266,10 +266,14 @@ body {
 
 .popup {
   display: none;
+  position: fixed;
+  top: 8%;
+  left: 2%;
   width: 96%;
   height: auto;
   border: 1px solid #dfe1e6;
   padding: 5%;
+  background-color: #fff;
 }
 
 .popup-header {
