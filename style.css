@@ -793,7 +793,7 @@ body {
     display: flex;
   }
 
-  .popup-close:hover{
+  .popup-close:hover {
     width: 17px;
     height: 17px;
   }
