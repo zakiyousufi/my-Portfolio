@@ -267,7 +267,7 @@ body {
 .popup {
   display: none;
   position: fixed;
-  top: 8%;
+  top: 12%;
   left: 2%;
   width: 96%;
   height: auto;
@@ -287,6 +287,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   color: #172b4d;
+}
+
+.popup_h1_desktop{
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: #172b4d;
+  margin-left: 0;
 }
 
 .popup-close {
@@ -314,6 +322,10 @@ body {
   font-size: 16px;
   color: #344563;
   padding-top: 24px;
+}
+
+.popup-discription-desktop {
+  display: none;
 }
 
 .popup-form {
@@ -754,6 +766,86 @@ body {
     width: 100%;
     padding: 10px;
     margin-right: 5px;
+  }
+
+  .popup.active {
+    display: grid;
+    grid-template-rows: 5% 15% 30%;
+    width: 85%;
+    margin-left: 5.5%;
+    margin-top: 3%;
+    height: auto;
+    padding-bottom: 0;
+    position: block;
+    bottom: 4%;
+    
+  }
+
+  .popup-header {
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .popup-h1 {
+    display: none;
+  }
+
+  .popup_h1_desktop {
+    display: flex;
+  }
+
+  .popup-icons {
+    grid-row: 2;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    height: 35px;
+    text-align: center;
+    padding-top: 1%;
+  }
+
+  .popup-section2 {
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: 50% 40%;
+  }
+
+  .popup-img {
+    grid-column: 1;
+    width: 85%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .popup-discription-btn {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .popup-discription {
+    display: none;
+  }
+
+  .popup-discription-desktop {
+    display: flex;
+    grid-column: 2;
+    padding: 15px;
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #344563;
+    padding-top: 24px;
+  }
+
+  .popup-form {
+    position: static;
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .popup_btn {
+    display: flex;
   }
 
   .page2 {
