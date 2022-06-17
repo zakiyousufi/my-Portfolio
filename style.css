@@ -770,7 +770,6 @@ body {
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 40% 40%;
     width: 100%;
-
   }
 
   .popup.active {
@@ -862,8 +861,8 @@ body {
     margin-right: 10%;
     margin-bottom: 20%;
     display: flex;
-    flex-wrap: wrap
-  } 
+    flex-wrap: wrap;
+  }
 
   .button4 {
     display: none;

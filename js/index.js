@@ -49,7 +49,7 @@ function displayProjects() {
     cards.insertAdjacentHTML('beforeend', projectHTML);
   });
   projectCards.appendChild(cards);
-};
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
@@ -71,13 +71,13 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 const seeProject = document.querySelectorAll('.btn-active');
-  const popup = document.querySelector('.popup');
-  const popupClose = document.querySelector('.popup-close');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup-close');
 
-  seeProject.forEach(addEventListener('click', () => {
-    popup.classList.toggle('active');
-  }));
+seeProject.forEach(addEventListener('click', () => {
+  popup.classList.toggle('active');
+}));
 
   popupClose.addEventListener('click', () => {
-    popup.classList.remove('active');
-  });
+  popup.classList.remove('active');
+});
