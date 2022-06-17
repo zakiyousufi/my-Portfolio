@@ -48,11 +48,13 @@ body {
 
 .close {
   margin-left: 95%;
+  width: 12px;
+  height: 12px;
 }
 
 .m-menu-text {
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 32px;
   color: #fff;
   text-decoration: none;
   margin-left: 12px;
@@ -65,7 +67,9 @@ body {
 .m-menu-hr {
   margin-top: 12px;
   margin-bottom: 24px;
-  margin-right: 10%;
+  margin-right: 3%;
+  color: #6f6c6b;
+  border: 1px solid;
 }
 
 .mobileMenu.active {
