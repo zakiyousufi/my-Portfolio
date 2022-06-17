@@ -354,6 +354,12 @@ body {
 .projects-section2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
   align-self: center;
 }
 
@@ -761,11 +767,10 @@ body {
 
   .projects-section2 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 40% 40%;
     width: 100%;
-    padding: 10px;
-    margin-right: 5px;
+
   }
 
   .popup.active {
@@ -852,10 +857,13 @@ body {
   }
 
   .page2 {
-    margin-right: 10px;
+    width: 95%;
+    height: 400px;
+    margin-right: 10%;
+    margin-bottom: 20%;
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-wrap: wrap
+  } 
 
   .button4 {
     display: none;
@@ -875,12 +883,15 @@ body {
 
   .page2:hover .button4 {
     display: flex;
-    top: 80%;
+    width: 100%;
+    margin-top: 25.5%;
+    bottom: 0;
   }
 
   .page2:hover {
     background-image: url(css/image/projects_imges/hover.png);
-    padding-top: 340px;
+    padding-top: 72%;
+    padding-bottom: 0;
   }
 
   .page6-content {
@@ -1037,23 +1048,6 @@ body {
   .line {
     width: 65%;
     margin-left: 5px;
-  }
-
-  .projects-section2 {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    width: 80%;
-    padding: 30px;
-    padding-left: 2%;
-    margin-right: 20px;
-    margin-left: 10%;
-  }
-
-  .page2 {
-    margin-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .d-about-b {
