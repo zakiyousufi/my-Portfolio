@@ -289,7 +289,7 @@ body {
   color: #172b4d;
 }
 
-.popup_h1_desktop{
+.popup_h1_desktop {
   display: none;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
@@ -776,9 +776,7 @@ body {
     margin-top: 3%;
     height: auto;
     padding-bottom: 0;
-    position: block;
     bottom: 4%;
-    
   }
 
   .popup-header {
