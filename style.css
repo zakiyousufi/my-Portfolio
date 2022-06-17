@@ -265,14 +265,38 @@ body {
 }
 
 .popup {
-  width: 90%;
+  width: 96%;
   height: 720px;
+  border: 1px solid #dfe1e6;
+  padding: 5%;
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 78px;
 }
 
 .popup-h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   color: #172b4d;
+}
+
+.popup-close {
+  width: 12px;
+  height: 12px;
+}
+
+.popup-icons {
+  padding: 10px;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #3c3a39;
+  background-color: #fff;
+  border: 1px solid #979493;
 }
 
 .prokects-section2 {
