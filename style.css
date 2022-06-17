@@ -265,8 +265,9 @@ body {
 }
 
 .popup {
+  display: none;
   width: 96%;
-  height: 720px;
+  height: auto;
   border: 1px solid #dfe1e6;
   padding: 5%;
 }
@@ -297,6 +298,35 @@ body {
   color: #3c3a39;
   background-color: #fff;
   border: 1px solid #979493;
+}
+
+.popup-img {
+  width: 98%;
+  margin-top: 24px;
+}
+
+.popup-discription {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #344563;
+  padding-top: 24px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.popup_btn {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  padding: 10px;
+  margin-left: 0;
+}
+
+.popup.active {
+  display: block;
 }
 
 .prokects-section2 {

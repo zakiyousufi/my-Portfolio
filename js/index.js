@@ -14,3 +14,4 @@ window.addEventListener('DOMContentLoaded', () => {
     mobMenu.classList.remove('active');
   });
 });
+
