@@ -77,5 +77,3 @@ window.addEventListener('DOMContentLoaded', () => {
     popup.classList.remove('active');
   });
 });
-
-
