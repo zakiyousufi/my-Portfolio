@@ -61,10 +61,10 @@ function displayProjects() {
     cards.insertAdjacentHTML('beforeend', projectHTML);
   });
   projectCards.appendChild(cards);
-};
+}
 
-let handleSubmit = (event) => {
-  event.preventDefault()
+const handleSubmit = (event) => {
+  event.preventDefault();
   const nameError = document.getElementById('name-error');
   const emailError = document.getElementById('email-error');
   const msgError = document.getElementById('msg-error');
