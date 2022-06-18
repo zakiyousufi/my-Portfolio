@@ -84,6 +84,10 @@ const handleSubmit = (event) => {
     emailError.innerHTML = 'Email is incorect';
     error = true;
   }
+  if (email.match('[A-Z0-9]+@[A-Z]+.[A-Z]{2,3}')) {
+    emailError.innerHTML = 'Email is incorect';
+    error = true;
+  }
   if (msg.length === 0) {
     msgError.innerHTML = 'Message is required';
     error = true;
