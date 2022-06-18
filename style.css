@@ -702,11 +702,10 @@ body {
   }
 
   .projects-subject {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 100px;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    width: 80%;
+    margin-bottom: 5%;
   }
 
   .projects {
@@ -716,7 +715,7 @@ body {
 
   .line {
     width: 40%;
-    margin-left: 5px;
+    margin-right: 40%;
   }
 
   .project-1 {
@@ -725,21 +724,23 @@ body {
   }
 
   .project-head {
-    grid-column-start: 2;
+    grid-column: 2;
   }
 
   .multy-task {
     grid-column-start: 2;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-top: 15%;
   }
 
   .project-discription {
-    grid-column-start: 2;
+    grid-column: 2;
     margin-top: 0;
   }
 
   .icons-desktop {
     grid-column: 2;
+    grid-row: 2;
   }
 
   .project-desktop-button {
@@ -748,10 +749,10 @@ body {
   }
 
   .project-img {
-    grid-column-start: 1;
+    grid-column: 1;
     width: 60%;
     height: auto;
-    margin-left: 20%;
+    margin-left: 0;
   }
 
   .projects-section2 {
@@ -836,13 +837,18 @@ body {
     display: flex;
   }
 
+  .prokects-section2 {
+    height: auto;
+  }
+
   .page2 {
     width: 95%;
     height: 400px;
     margin-right: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 40%;
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   .button4 {
@@ -863,8 +869,9 @@ body {
 
   .page2:hover .button4 {
     display: flex;
+    align-self: flex-end;
     width: 100%;
-    margin-top: 25.5%;
+    margin-top: 33px;
     bottom: 0;
   }
 
@@ -1023,6 +1030,14 @@ body {
   .projects-subject {
     display: flex;
     justify-content: center;
+  }
+
+  .page2:hover .button4 {
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    margin-top: 33px;
+    bottom: 0;
   }
 
   .line {
