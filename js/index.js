@@ -67,6 +67,7 @@ const handleSubmit = (event) => {
   event.preventDefault();
   const nameError = document.getElementById('name-error');
   const emailError = document.getElementById('email-error');
+  const emailIcnorect = document.getElementById('emile-incorect');
   const msgError = document.getElementById('msg-error');
   const name = document.getElementById('name-input').value;
   const email = document.getElementById('email-input').value;
@@ -81,11 +82,11 @@ const handleSubmit = (event) => {
     error = true;
   }
   if (!email.match('[a-z0-9]+@[a-z]+.[a-z]{2,3}')) {
-    emailError.innerHTML = 'Email is incorect';
+    emailIcnorect.innerHTML = 'Email is incorect';
     error = true;
   }
   if (email.match('[A-Z0-9]+@[A-Z]+.[A-Z]{2,3}')) {
-    emailError.innerHTML = 'Email is incorect';
+    emailIcnorect.innerHTML = 'Email is incorect';
     error = true;
   }
   if (msg.length === 0) {
