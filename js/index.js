@@ -70,9 +70,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   displayProjects();
   const seeProject = document.querySelectorAll('.btn-active');
-  seeProject.forEach(window.addEventListener('click', () => {
+  seeProject.forEach((btn) => {
+    const seePopuop = btn.addEventListener('click', () => {
     popup.classList.toggle('active');
-  }));
+    });
+  });
   popupClose.addEventListener('click', () => {
     popup.classList.remove('active');
   });
