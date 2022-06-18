@@ -56,6 +56,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const mobMenu = document.querySelector('.mobileMenu');
   const classOff = document.querySelector('.close');
   const links = document.querySelector('.m-menu-text');
+  const popup = document.querySelector('.popup');
+  const popupClose = document.querySelector('.popup-close');
 
   hamburger.addEventListener('click', () => {
     mobMenu.classList.toggle('active');
@@ -66,19 +68,14 @@ window.addEventListener('DOMContentLoaded', () => {
   links.addEventListener('click', () => {
     mobMenu.classList.remove('active');
   });
-
   displayProjects();
+  const seeProject = document.querySelectorAll('.btn-active');
+  seeProject.forEach(addEventListener('click', () => {
+    popup.classList.toggle('active');
+  }));
+  popupClose.addEventListener('click', () => {
+    popup.classList.remove('active');
+  });
 });
 
-const seeProject = document.querySelectorAll('.btn-active');
-const popup = document.querySelector('.popup');
-const popupClose = document.querySelector('.popup-close');
 
-seeProject.forEach(
-  addEventListener('click', () => {
-  popup.classList.toggle('active');
-}));
-
-popupClose.addEventListener('click', () => {
-  popup.classList.remove('active');
-});
