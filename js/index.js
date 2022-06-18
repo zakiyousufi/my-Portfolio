@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
   displayProjects();
   const seeProject = document.querySelectorAll('.btn-active');
   seeProject.forEach((btn) => {
-    const seePopuop = btn.addEventListener('click', () => {
+     btn.addEventListener('click', () => {
     popup.classList.toggle('active');
     });
   });
