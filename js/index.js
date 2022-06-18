@@ -118,11 +118,10 @@ window.addEventListener('DOMContentLoaded', () => {
   seeProject.forEach((btn) => {
     btn.addEventListener('click', (event) => {
       const id = parseInt(event.target.id);
-      if(id === 6) {
+      if (id === 6) {
         popupH1 = projectObb.subName;
         popupInfo = projectObb.info;
-      }
-      else {
+      } else {
         popupH1 = arr[id].name;
         popupInfo = arr[id].description;
       }
