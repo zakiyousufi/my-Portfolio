@@ -61,6 +61,37 @@ function displayProjects() {
     cards.insertAdjacentHTML('beforeend', projectHTML);
   });
   projectCards.appendChild(cards);
+};
+
+let handleSubmit = (event) => {
+  event.preventDefault();
+  let nameError = document.getElementById('name-error');
+  let emailError = document.getElementById('email-error');
+  let msgError = document.getElementById('msg-error');
+  let name = document.getElementById('name-input').value;
+  let email = document.getElementById('email-input').value;
+  let msg = document.getElementById('msg-input').value;
+  let error = false;
+  if (name.length == 0) {
+    nameError.innerHTML = 'Name is required';
+    error = true;
+  };
+  if (email.length == 0) {
+    emailError.innerHTML = 'Email is required';
+    error = true;
+  };
+  if (!email.match(`[a-z0-9]+@[a-z]+\.[a-z]{2,3}`)) {
+    emailError.innerHTML = 'Email is incorect';
+    error = true;
+  };
+  if (msg.length == 0) {
+    msgError.innerHTML = 'Message is required';
+    error = true;
+  };
+  if (!error) {
+    let form = document.getElementById('contact-form');
+    form.submit();
+  }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -133,4 +164,6 @@ window.addEventListener('DOMContentLoaded', () => {
   popupClose.addEventListener('click', () => {
     popup.classList.remove('active');
   });
+  const submit = document.getElementById('form-btn')
+  submit.addEventListener('click', handleSubmit);
 });
