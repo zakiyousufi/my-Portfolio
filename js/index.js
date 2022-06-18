@@ -34,7 +34,7 @@ const projectObb = {
   took
   a standard dummy text.`,
   button: 'See Project',
-}
+};
 
 function displayProjects() {
   const projectCards = document.getElementById('cards');
@@ -59,11 +59,9 @@ function displayProjects() {
           See Project
         </button></div>`;
     cards.insertAdjacentHTML('beforeend', projectHTML);
-
   });
   projectCards.appendChild(cards);
 }
-
 
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
@@ -119,17 +117,15 @@ window.addEventListener('DOMContentLoaded', () => {
   let popupInfo = '';
   seeProject.forEach((btn) => {
     btn.addEventListener('click', (event) => {
-      console.log(event);
       const id = parseInt(event.target.id);
-      console.log(id);
-      if(id === 6){
-      popupH1 = projectObb.subName;
-      popupInfo = projectObb.info;
+      if(id === 6) {
+        popupH1 = projectObb.subName;
+        popupInfo = projectObb.info;
       }
-      else{
+      else {
         popupH1 = arr[id].name;
         popupInfo = arr[id].description;
-      };      
+      }
       popupHeading.innerHTML = popupH1;
       popupParagraph.innerHTML = popupInfo;
       popup.classList.toggle('active');
