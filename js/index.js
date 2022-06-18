@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let popupInfo = '';
   seeProject.forEach((btn) => {
     btn.addEventListener('click', (event) => {
-      const id = parseInt(event.target.id,10);
+      const id = parseInt(event.target.id, 10);
       if (id === 6) {
         popupH1 = projectObb.subName;
         popupInfo = projectObb.info;
