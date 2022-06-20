@@ -114,7 +114,7 @@ const handleSubmit = (event) => {
 function setData() {
   const storeName = document.getElementById('name-input');
   const nameValue = storeName.value;
-  localStorage.setItem('storeNmae', nameValue);
+  localStorage.setItem(nameValue);
   const storeEmail = document.getElementById('email-input');
   const emailValue = storeEmail.value;
   localStorage.setItem('storeEmail-input', emailValue);
