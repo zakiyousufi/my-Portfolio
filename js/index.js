@@ -123,13 +123,13 @@ function setData() {
   localStorage.setItem('storeMsg-input', msgValue);
 }
 
-function getData () {
+function getItems() {
   let localData = localStorage.getItem('storeName');
-  document.getElementById('name-input').value =localData;
+  document.getElementById('name-input').value = localData;
   localData = localStorage.getItem('storeEmail');
-  document.getElementById('msg-input').value =localData;
+  document.getElementById('msg-input').value = localData;
   localData = localStorage.getItem('storeMsg');
-  document.getElementById('msg-input').value =localData;
+  document.getElementById('msg-input').value = localData;
 }
 
 window.addEventListener('DOMContentLoaded', () => {
