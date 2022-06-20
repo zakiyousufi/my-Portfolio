@@ -111,6 +111,12 @@ const handleSubmit = (event) => {
   }
 };
 
+function setItemsData (event) {
+  const inputName = event.target.id;
+  const { value } = document.getElementById(inputName);
+  localStorage.setItem(inputName, value);
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
   const mobMenu = document.querySelector('.mobileMenu');
