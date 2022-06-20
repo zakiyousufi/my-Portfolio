@@ -117,6 +117,15 @@ function setData(event) {
   localStorage.setItem(inputName, value);
 }
 
+function getData() {
+  let localData = localStorage.getItem('name');
+  document.getElementById('name').value = localData;
+  localData = localStorage.getItem('email');
+  document.getElementById('email').value = localData;
+  localData = localStorage.getItem('textarea');
+  document.getElementById('textarea').value = localData;
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
   const mobMenu = document.querySelector('.mobileMenu');
