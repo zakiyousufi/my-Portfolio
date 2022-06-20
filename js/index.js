@@ -121,12 +121,17 @@ function setData() {
   const storeMsg = document.getElementById('msg-input');
   const msgValue = storeMsg.value;
   localStorage.setItem('storeMsg-input', msgValue);
-  let localData = localStorage.getItem(nameValue);
-  localData = localStorage.getItem(emailValue);
-  localData = localStorage.getItem(msgValue);
-
 }
-  
+
+function getData () {
+  let localData = localStorage.getItem('storeName');
+  document.getElementById('name-input').value =localData;
+  localData = localStorage.getItem('storeEmail');
+  document.getElementById('msg-input').value =localData;
+  localData = localStorage.getItem('storeMsg');
+  document.getElementById('msg-input').value =localData;
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
   const mobMenu = document.querySelector('.mobileMenu');
