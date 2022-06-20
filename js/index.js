@@ -114,21 +114,19 @@ const handleSubmit = (event) => {
 function setData() {
   const storeName = document.getElementById('name-input');
   const nameValue = storeName.value;
-  localStorage.setItem(nameValue);
+  localStorage.setItem('storeNmae', nameValue);
   const storeEmail = document.getElementById('email-input');
   const emailValue = storeEmail.value;
   localStorage.setItem('storeEmail-input', emailValue);
   const storeMsg = document.getElementById('msg-input');
   const msgValue = storeMsg.value;
   localStorage.setItem('storeMsg-input', msgValue);
-}
-
-function getData() {
   let localData = localStorage.getItem(nameValue);
   localData = localStorage.getItem(emailValue);
   localData = localStorage.getItem(msgValue);
-}
 
+}
+  
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
   const mobMenu = document.querySelector('.mobileMenu');
