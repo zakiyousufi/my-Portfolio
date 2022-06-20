@@ -73,25 +73,37 @@ const handleSubmit = (event) => {
   const email = document.getElementById('email-input').value;
   const msg = document.getElementById('msg-input').value;
   let error = false;
+
   if (name.length === 0) {
     nameError.innerHTML = 'Name is required';
     error = true;
   }
-  if (email.length === 0) {
-    emailError.innerHTML = 'Email is required';
-    error = true;
+  if (error === false) {
+    if (email.length === 0) {
+      emailError.innerHTML = 'Email is required';
+      error = true;
+    }
+    nameError.innerHTML = '';
   }
-  if (!email.match('[a-z0-9]+@[a-z]+.[a-z]{2,3}')) {
-    emailIcnorect.innerHTML = 'Email is incorect';
-    error = true;
+  if (error === false) {
+    if (!email.match('[a-z0-9]+@[a-z]+.[a-z]{2,3}')) {
+      emailIcnorect.innerHTML = 'Email is incorect';
+      error = true;
+    }
+    emailError.innerHTML = '';
   }
-  if (email.match('[A-Z0-9]+@[A-Z]+.[A-Z]{2,3}')) {
-    emailIcnorect.innerHTML = 'Email is incorect';
-    error = true;
+  if (error === false) {
+    if (email !== email.toLowerCase()) {
+      emailIcnorect.innerHTML = 'Email is incorect';
+      error = true;
+    }
   }
-  if (msg.length === 0) {
-    msgError.innerHTML = 'Message is required';
-    error = true;
+  if (error === false) {
+    if (msg.length === 0) {
+      msgError.innerHTML = 'Message is required';
+      error = true;
+    }
+    emailIcnorect.innerHTML = '';
   }
   if (!error) {
     const form = document.getElementById('contact-form');
