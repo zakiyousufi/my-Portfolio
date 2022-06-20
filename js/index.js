@@ -124,14 +124,13 @@ function setData() {
   return setData;
 }
 
-function getData() {
+function localData() {
   let localData = localStorage.getItem('storeName');
   document.getElementById('name-input').value = localData;
   localData = localStorage.getItem('storeEmail');
   document.getElementById('msg-input').value = localData;
   localData = localStorage.getItem('storeMsg');
   document.getElementById('msg-input').value = localData;
-  return getData;
 }
 
 window.addEventListener('DOMContentLoaded', () => {
