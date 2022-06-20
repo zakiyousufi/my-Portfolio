@@ -113,13 +113,13 @@ const handleSubmit = (event) => {
 
 function setData() {
   const storeName = document.getElementById('name-input');
-  const nameValue = storeName.value
+  const nameValue = storeName.value;
   localStorage.setItem('storeNmae', nameValue);
   const storeEmail = document.getElementById('email-input');
-  const emailValue = storeEmail.value
+  const emailValue = storeEmail.value;
   localStorage.setItem('storeEmail-input', emailValue);
   const storeMsg = document.getElementById('msg-input');
-  const msgValue = storeMsg.value
+  const msgValue = storeMsg.value;
   localStorage.setItem('storeMsg-input', msgValue);
 }
 
