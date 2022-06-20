@@ -111,19 +111,22 @@ const handleSubmit = (event) => {
   }
 };
 
-function setData(event) {
-  const inputName = event.target.id;
-  const { value } = document.getElementById(inputName);
-  localStorage.setItem(inputName, value);
+function setData() {
+  const storeName = document.getElementById('name-input');
+  const nameValue = storeName.value
+  localStorage.setItem('storeNmae', nameValue);
+  const storeEmail = document.getElementById('email-input');
+  const emailValue = storeEmail.value
+  localStorage.setItem('storeEmail-input', emailValue);
+  const storeMsg = document.getElementById('msg-input');
+  const msgValue = storeMsg.value
+  localStorage.setItem('storeMsg-input', msgValue);
 }
 
 function getData() {
-  let localData = localStorage.getItem('name');
-  document.getElementById('name').value = localData;
-  localData = localStorage.getItem('email');
-  document.getElementById('email').value = localData;
-  localData = localStorage.getItem('textarea');
-  document.getElementById('textarea').value = localData;
+  let localData = localStorage.getItem(nameValue);
+  localData = localStorage.getItem(emailValue);
+  localData = localStorage.getItem(msgValue);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -136,6 +139,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const resentWorks = document.getElementById('my-resent-projects');
   const popupHeading = document.getElementById('popup-heading');
   const popupParagraph = document.getElementById('popup-paragraph');
+  document.getElementById('name-input').addEventListener('focusout', setData);
+  document.getElementById('email-input').addEventListener('focusout', setData);
+  document.getElementById('msg-input').addEventListener('focusout', setData);
 
   const multiPostStory = `
     <h1 class="projects">${projectObb.name}</h1>
