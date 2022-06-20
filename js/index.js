@@ -124,12 +124,12 @@ function setData() {
   return setData;
 }
 
-  let localData = localStorage.getItem('storeName');
-  document.getElementById('name-input').value = localData;
-  localData = localStorage.getItem('storeEmail');
-  document.getElementById('msg-input').value = localData;
-  localData = localStorage.getItem('storeMsg');
-  document.getElementById('msg-input').value = localData;
+let localData = localStorage.getItem('storeName');
+document.getElementById('name-input').value = localData;
+localData = localStorage.getItem('storeEmail');
+document.getElementById('msg-input').value = localData;
+localData = localStorage.getItem('storeMsg');
+document.getElementById('msg-input').value = localData;
 
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
