@@ -244,11 +244,15 @@
         <div class="contact-form">
             <h2 class="lastpage-heading">I'm always interested in hearing about new projects, so if you'd like to chat
                 please get in touch.</h2>
-            <form class="form" action="https://formspree.io/f/xnqwwrzy" method="POST">
-                <input class="fullname" type="text" name="fullname" placeholder="Full name" required>
-                <input class="fullname" type="email" name="fullname" placeholder="Email address" required>
-                <textarea class="text-area" placeholder="Enter text here" required></textarea>
-                <button type="submit" class="animate-btn button1 button1-text button-end btn-d">Get in touch</button>
+            <form id="contact-form" class="form" action="https://formspree.io/f/xnqwwrzy" method="POST">
+                <input id="name-input" class="fullname" type="text" name="fullname" placeholder="Full name">
+                <span id="name-error" class="error"></span>
+                <input id="email-input" class="fullname" type="email" name="fullname" placeholder="Email address">
+                <span id="email-error" class="error"></span>
+                <textarea id="msg-input" class="text-area" placeholder="Enter text here"requied></textarea>
+                <span id="msg-error" class="error"></span>
+                <button id="form-btn" class="animate-btn button1 button1-text button-end btn-d">Get in touch</button>
+                <span id="emile-incorect" class="error"></span>
             </form>
         </div>
         <hr class="footer-line1">

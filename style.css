@@ -541,6 +541,14 @@ body {
   padding-left: 20px;
 }
 
+.error {
+  margin-top: 10px;
+  margin-right: 75%;
+  font-size: 16px;
+  text-align: left;
+  color: red;
+}
+
 .button-end {
   width: 131px;
   margin: 30px 0 30px 0;

@@ -63,6 +63,54 @@ function displayProjects() {
   projectCards.appendChild(cards);
 }
 
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const nameError = document.getElementById('name-error');
+  const emailError = document.getElementById('email-error');
+  const emailIcnorect = document.getElementById('emile-incorect');
+  const msgError = document.getElementById('msg-error');
+  const name = document.getElementById('name-input').value;
+  const email = document.getElementById('email-input').value;
+  const msg = document.getElementById('msg-input').value;
+  let error = false;
+
+  if (name.length === 0) {
+    nameError.innerHTML = 'Name is required';
+    error = true;
+  }
+  if (error === false) {
+    if (email.length === 0) {
+      emailError.innerHTML = 'Email is required';
+      error = true;
+    }
+    nameError.innerHTML = '';
+  }
+  if (error === false) {
+    if (!email.match('[a-z0-9]+@[a-z]+.[a-z]{2,3}')) {
+      emailIcnorect.innerHTML = 'Email is incorect';
+      error = true;
+    }
+    emailError.innerHTML = '';
+  }
+  if (error === false) {
+    if (email !== email.toLowerCase()) {
+      emailIcnorect.innerHTML = 'Email is incorect';
+      error = true;
+    }
+  }
+  if (error === false) {
+    if (msg.length === 0) {
+      msgError.innerHTML = 'Message is required';
+      error = true;
+    }
+    emailIcnorect.innerHTML = '';
+  }
+  if (!error) {
+    const form = document.getElementById('contact-form');
+    form.submit();
+  }
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.menu');
   const mobMenu = document.querySelector('.mobileMenu');
@@ -133,4 +181,6 @@ window.addEventListener('DOMContentLoaded', () => {
   popupClose.addEventListener('click', () => {
     popup.classList.remove('active');
   });
+  const submit = document.getElementById('form-btn');
+  submit.addEventListener('click', handleSubmit);
 });
